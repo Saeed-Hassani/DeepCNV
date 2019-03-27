@@ -16,12 +16,12 @@ DeepCNV method is a novel cancer type classifier based on deep learning and copy
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the following packages:
 
 ```bash
-pygubu
-matplotlib
-numpy
-pandas
-keras
-sklearn
+**pygubu**
+**matplotlib**
+**numpy**
+**pandas**
+**keras**
+**sklearn**
 ```
 
 فرمت ورودی به برنامه:
