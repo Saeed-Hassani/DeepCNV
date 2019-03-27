@@ -38,12 +38,13 @@ The DeepCNV method used from [cBioPortal](http://cbio.mskcc.org/cancergenomics/p
 > |    0  |   -2   |   ...  |    0  |   C1  |
 > |   +1  |    0   |   ...  |   +2  |   C3  |
 
-## Parameters
-> **LSTM Units**:
-> **Dropout**:
-> **Test Size**:
-> **Validation Size**:
-> **Epoch**:
-> **Batch Size**:
-> **Desired Feature**:
-> **Shuffle**:
+## Sample of output
+### Mean-Square-Error
+<p align="center">
+  <img src="/images/error-rate.png" title="MSE plot">
+</p>
+### Heat-Map output
+<p align="center">
+  <img src="/images/heat-map.png" title="Heat-Map diagram">
+</p>
+
