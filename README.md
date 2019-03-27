@@ -1,5 +1,5 @@
 # DeepCNV
-DeepCNV method is a novel cancer type classifier based on deep learning and copy number variants which has been implemented with Python.
+> DeepCNV method is a novel cancer type classifier based on deep learning and copy number variants which has been implemented with Python.
 
 ## Demo
 <p align="center">
