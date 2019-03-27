@@ -9,7 +9,7 @@
 
 ## Architecture
 <p align="center">
-  <img src="/images/architecture.png" width="300" title="architecture">
+  <img src="/images/architecture.png" title="architecture">
 </p>
 
 ## Installation
