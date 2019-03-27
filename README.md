@@ -43,6 +43,7 @@ The DeepCNV method used from [cBioPortal](http://cbio.mskcc.org/cancergenomics/p
 <p align="center">
   <img src="/images/error-rate.png" title="MSE plot">
 </p>
+
 ### Heat-Map output
 <p align="center">
   <img src="/images/heat-map.png" title="Heat-Map diagram">
