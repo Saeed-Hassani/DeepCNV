@@ -1,0 +1,323 @@
+<?xml version="1.0" ?>
+<interface>
+    <object class="ttk.Frame" id="mainwindow">
+        <property name="height">850</property>
+        <property name="padding">10</property>
+        <property name="width">850</property>
+        <layout>
+            <property name="column">0</property>
+            <property name="row">0</property>
+            <rows>
+                <row id="0">
+                    <property name="pad">20</property>
+                </row>
+                <row id="2">
+                    <property name="pad">10</property>
+                </row>
+                <row id="5">
+                    <property name="pad">10</property>
+                </row>
+                <row id="7">
+                    <property name="pad">10</property>
+                </row>
+            </rows>
+            <columns>
+                <column id="1">
+                    <property name="pad">10</property>
+                </column>
+                <column id="0">
+                    <property name="pad">10</property>
+                </column>
+            </columns>
+        </layout>
+
+        <!--Title-->
+        <child>
+            <object class="ttk.Label" id="ttk.Label_1">
+                <property name="anchor">center</property>
+                <property name="font">Sans 14</property>
+                <property name="text">DeepCNV Method</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="sticky">ew</property>
+                    <property name="columnspan">2</property>
+                    <property name="row">0</property>
+                </layout>
+            </object>
+        </child>
+
+        <child>
+            <object class="ttk.Label" id="ttk.lblPath">
+                <property name="text">Path:</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="row">5</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Entry" id="ttk.txtPath">
+                <property name="validatecommand_args">%P</property>
+                <layout>
+                    <property name="column">1</property>
+                    <property name="row">5</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Label" id="ttk.Label_2">
+                <property name="text">Test Size:</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="row">10</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Scale" id="scaleTSize">
+                <property name="command">on_text_size_changed</property>
+                <property name="from_">0</property>
+                <property name="orient">horizontal</property>
+                <property name="to">100</property>
+                <property name="value">0</property>
+                <layout>
+                    <property name="column">1</property>
+                    <property name="row">10</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Label" id="scale2label">
+                <layout>
+                    <property name="column">1</property>
+                    <property name="row">11</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Label" id="ttk.lblValidation">
+                <property name="text">Validation Size:</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="row">14</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Scale" id="scaleValidation">
+                <property name="command">on_validation_changed</property>
+                <property name="from_">0</property>
+                <property name="orient">horizontal</property>
+                <property name="to">100</property>
+                <property name="value">0</property>
+                <layout>
+                    <property name="column">1</property>
+                    <property name="row">14</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Label" id="scale2lblValidation">
+                <layout>
+                    <property name="column">1</property>
+                    <property name="row">15</property>
+                </layout>
+            </object>
+        </child>
+
+        <child>
+            <object class="ttk.Separator" id="ttk.Separator_1">
+                <property name="orient">horizontal</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="sticky">ew</property>
+                    <property name="columnspan">2</property>
+                    <property name="row">16</property>
+                </layout>
+            </object>
+        </child>
+
+        <child>
+            <object class="ttk.Label" id="ttk.lblEpoch">
+                <property name="text">Epoch:</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="row">20</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Entry" id="ttk.txtEpoch">
+                <property name="invalidcommand">entry_invalid</property>
+                <property name="validate">key</property>
+                <property name="validatecommand">validate_number</property>
+                <property name="validatecommand_args">%P</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="row">21</property>
+                </layout>
+            </object>
+        </child>
+
+        <child>
+            <object class="ttk.Label" id="ttk.lblBatch">
+                <property name="text">Batch Size:</property>
+                <layout>
+                    <property name="column">1</property>
+                    <property name="row">20</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Entry" id="ttk.txtBatch">
+                <property name="invalidcommand">entry_invalid</property>
+                <property name="validate">key</property>
+                <property name="validatecommand">validate_number</property>
+                <property name="validatecommand_args">%P</property>
+                <layout>
+                    <property name="column">1</property>
+                    <property name="row">21</property>
+                </layout>
+            </object>
+        </child>
+
+        <child>
+            <object class="ttk.Separator" id="ttk.Separator_1">
+                <property name="orient">horizontal</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="sticky">ew</property>
+                    <property name="columnspan">2</property>
+                    <property name="row">22</property>
+                </layout>
+            </object>
+        </child>
+
+        <child>
+            <object class="ttk.Label" id="ttk.lblUnit">
+                <property name="text">Number of LSTM Units:</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="row">24</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Entry" id="ttk.txtUnit">
+                <property name="invalidcommand">entry_invalid</property>
+                <property name="validate">key</property>
+                <property name="validatecommand">validate_number</property>
+                <property name="validatecommand_args">%P</property>
+                <layout>
+                    <property name="column">1</property>
+                    <property name="row">24</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Label" id="ttk.lblDropout">
+                <property name="text">Drop-Out Size:</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="row">30</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Scale" id="scaleDropout">
+                <property name="command">on_scale2_changed</property>
+                <property name="from_">0</property>
+                <property name="orient">horizontal</property>
+                <property name="to">100</property>
+                <property name="value">0</property>
+                <layout>
+                    <property name="column">1</property>
+                    <property name="row">30</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Label" id="scale2Dropout">
+                <layout>
+                    <property name="column">1</property>
+                    <property name="row">31</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Separator" id="ttk.Separator_1">
+                <property name="orient">horizontal</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="sticky">ew</property>
+                    <property name="columnspan">2</property>
+                    <property name="row">32</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Label" id="ttk.lblDesired">
+                <property name="text">Desired Feature:</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="row">40</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Entry" id="ttk.txtDesired">
+                <property name="invalidcommand">entry_invalid</property>
+                <property name="validate">key</property>
+                <property name="validatecommand">set_desired_feature</property>
+                <property name="validatecommand_args">%P</property>
+                <layout>
+                    <property name="column">1</property>
+                    <property name="row">40</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Separator" id="ttk.Separator_1">
+                <property name="orient">horizontal</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="sticky">ew</property>
+                    <property name="columnspan">2</property>
+                    <property name="row">41</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Checkbutton" id="ttk.chkShuffle">
+                <property name="command">checkbutton_command</property>
+                <property name="text">Shuffle</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="row">45</property>
+                </layout>
+            </object>
+        </child>
+        <child>
+            <object class="ttk.Separator" id="ttk.Separator_1">
+                <property name="orient">horizontal</property>
+                <layout>
+                    <property name="column">0</property>
+                    <property name="sticky">ew</property>
+                    <property name="columnspan">2</property>
+                    <property name="row">46</property>
+                </layout>
+            </object>
+        </child>
+        <!--Last items...-->
+        <child>
+            <object class="ttk.Button" id="btnApply">
+                <property name="command">on_button_clicked</property>
+                <property name="text">Apply</property>
+                <layout>
+                    <property name="column">1</property>
+                    <property name="row">50</property>
+                </layout>
+            </object>
+        </child>
+    </object>
+</interface>
