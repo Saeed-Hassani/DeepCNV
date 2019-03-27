@@ -1,7 +1,15 @@
 # DeepCNV
 A novel cancer type classifier based on deep learning and copy number variants
-Demo
+## Demo
 معماری برنامه:
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the following packages:
+
+```bash
+pip install foobar
+```
 
 فرمت ورودی به برنامه:
 
@@ -37,3 +45,4 @@ Shuffle:
 This section of the program, show the architecture of lstm in the program
 نمونه خروجی:
 Sample of the output
+
