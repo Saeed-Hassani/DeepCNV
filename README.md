@@ -4,12 +4,12 @@
 
 ## Demo
 <p align="center">
-  <img src="/images/demo.png" width="250" height="350" title="Demo">
+  <img src="/images/demo.png" width="250" height="350" title="demo">
 </p>
 
 ## Architecture
 <p align="center">
-  <img src="/images/demo.png" width="250" height="350" title="Demo">
+  <img src="/images/architecture.png" width="300" title="architecture">
 </p>
 
 ## Installation
