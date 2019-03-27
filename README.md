@@ -29,7 +29,7 @@ sklearn
 The DeepCNV method used from [cBioPortal](http://cbio.mskcc.org/cancergenomics/pancan_tcga/) dataset. The CNV data dataset contains 11 different types of cancer. In this study 6 cancer types that had more than 400 patient samples were selected.
 
 > The dataset format should be as follows:
-
+>
 > |Gene_1 | Gene_2 |   ...  | Gene_n| Class |
 > | ----- | ------ | ------ | ----- | -----:|
 > |   +2  |   -1   |   ...  |   -2  |   C1  |
@@ -37,3 +37,13 @@ The DeepCNV method used from [cBioPortal](http://cbio.mskcc.org/cancergenomics/p
 > |   --  |   --   |   ---  |   --  |   --  |
 > |    0  |   -2   |   ...  |    0  |   C1  |
 > |   +1  |    0   |   ...  |   +2  |   C3  |
+
+## Parameters
+> **LSTM Units**:
+> **Dropout**:
+> **Test Size**:
+> **Validation Size**:
+> **Epoch**:
+> **Batch Size**:
+> **Desired Feature**:
+> **Shuffle**:
