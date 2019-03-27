@@ -24,8 +24,8 @@ keras
 sklearn
 ```
 
-## Dataset format
-The dataset format should be as follows:
+## About Dataset
+The DeepCNV method used from [cBioPortal](http://cbio.mskcc.org/cancergenomics/pancan_tcga/) dataset. The CNV data dataset contains 11 different types of cancer. In this study 6 cancer types that had more than 400 patient samples were selected.
 
 |Gene_1 | Gene_2 |   ...  | Gene_n| Class |
 | ----- | ------ | ------ | ----- | -----:|
